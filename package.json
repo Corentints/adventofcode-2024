@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "01": "tsx 01/01.ts",
+    "02": "tsx 02/02.ts",
     "lint": "eslint './**/*.{ts,js}'",
     "lint:fix": "eslint './**/*.{ts,js}' --fix",
     "format": "prettier --write './**/*.{ts,js,json,md}'"
