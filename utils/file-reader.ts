@@ -25,3 +25,16 @@ export async function readFileByLines(filePath: string): Promise<string[]> {
 
   return lines;
 }
+
+/**
+ * Reads a text file and returns its content as a string.
+ * @param filePath - The path to the text file.
+ * @returns The content of the file as a string.
+ */
+export function readFile(filePath: string): string {
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`File not found: ${filePath}`);
+  }
+
+  return fs.readFileSync(filePath, 'utf-8');
+}
